@@ -223,18 +223,6 @@ footer .social-links a:hover {
   transition: all 150ms ease-in-out;
 }
 
-.container-project {
-  background: #ff63c8;
-  padding: 20px;
-}
-
-.text {
-    color: white;
-}
-
-.text a {
-    color: white;
-}
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
