@@ -112,7 +112,7 @@ p {
 
 .content {
   margin: 30px;
-  background: var(--secondary-color);
+  
 }
 
 .img-fluid {
@@ -126,7 +126,7 @@ p {
 .button-container {
     display: flex;
     justify-content: center;
-  
+    
 }
 
 .row {
@@ -257,6 +257,11 @@ footer .social-links a:hover {
     text-align: center;
     padding: 0;
   }
+
+  .content-container {
+  padding: 40px 20px;
+  
+}
 
   .project-description {
     padding: 0;
