@@ -123,6 +123,12 @@ p {
   margin-bottom: 10px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+  
+}
+
 .row {
   justify-content: center;
 }
