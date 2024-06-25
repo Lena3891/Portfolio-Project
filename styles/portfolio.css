@@ -222,9 +222,12 @@ footer .contact-box p {
   width: 100%;
   margin-bottom: 5rem; /* Adjust the bottom margin as needed */
 }
+.contact-box p {
+  line-height: 1.2; /* Adjust line-height for the paragraph */
+}
 
 .contact-box {
-  width: 90%;
+  width: 80%;
   background-color: #f8f9fa; /* Optional: background color for visibility */
   padding: 20px; /* Optional: padding for inner spacing */
   border: 1px solid #ddd; /* Optional: border for visibility */
@@ -233,7 +236,6 @@ footer .contact-box p {
   justify-content: space-between;
   align-items: center;
 }
-
 footer .email-link {
   text-decoration: none;
   color: black;
@@ -301,4 +303,19 @@ footer .social-links a:hover {
     text-align: center;
     
   }
+    .contact-box {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text inside the container */
+  }
+  .contact-box div:last-child {
+    align-self: center; /* Center the button */
+    width: 100%;
+    text-align: center; /* Center the button text */
+    margin-top: 20px; /* Add margin-top to push the button further down */
+  }
+}
+   
+
+ 
 }
