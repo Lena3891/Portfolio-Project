@@ -1,7 +1,6 @@
 :root {
-  --branding-color: #c4bbf0;
-  --secondary-color: #c4bbf0;
-  --navbar-color: #c4bbf0;
+  --branding-color: #927fbf;
+  --navbar-color: #927fbf;
   --heading-font-family: "Playfair", sans-serif;
   
 
@@ -45,11 +44,11 @@ p {
   line-height: 30px;
 }
 .intro {
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .hero {
-  background: white;
+  background-color: #c4bbf0;
   text-align: center;
   padding: 160px 20px;
 }
@@ -63,7 +62,7 @@ p {
 }
 
 .navbar-branding {
-  background-color: #c4bbf0;
+  background-color: var(--branding-color);
   
 }
 
@@ -96,7 +95,7 @@ p {
 }
 
 .content h2 {
-  font-size: 64px;
+  font-size: 40px;
   font-family: var(--heading-font-family);
 }
 
@@ -132,10 +131,9 @@ p {
   height: 400px;
 }
 
-
-
 .row {
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .col-6 {
@@ -144,7 +142,7 @@ p {
 
 
 .hero {
-  background: var(--secondary-color);
+  background: #e4e0f6;
   text-align: center;
   padding: 80px 20px;
 }
@@ -176,7 +174,7 @@ p {
 
 .btn-branding-outline {
   color: black;
-  background: #c4bbf0;
+  background: #e4e0f6;
   border: 1px solid black;
   border-radius: 4px;
   font-size: 16px;
@@ -192,6 +190,10 @@ p {
 
 .project-description {
   padding: 120px 60px;
+  margin-bottom: 15px;
+}
+.row.align-items-center {
+  margin-bottom: 10px; /* Reduzieren Sie den Abstand nach Bedarf */
 }
 
 .link,
@@ -205,14 +207,33 @@ footer {
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
+  background: var(--branding-color);
   padding: 30px 60px;
   border-radius: 10px;
 }
 
 footer .contact-box p {
   margin: 0;
+  
 }
+.contact-box-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5rem; /* Adjust the bottom margin as needed */
+}
+
+.contact-box {
+  width: 90%;
+  background-color: #f8f9fa; /* Optional: background color for visibility */
+  padding: 20px; /* Optional: padding for inner spacing */
+  border: 1px solid #ddd; /* Optional: border for visibility */
+  border-radius: 5px; /* Optional: border radius for rounded corners */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer .email-link {
   text-decoration: none;
   color: black;
@@ -226,7 +247,7 @@ footer .email-link:hover {
 footer .social-links a {
   margin: 0 20px;
   color: black;
-  background: var(--secondary-color);
+  background: #e4e0f6;
   padding: 10px 14px;
   font-size: 18px;
   border-radius: 50%;
@@ -278,5 +299,6 @@ footer .social-links a:hover {
   .project-description {
     padding: 0;
     text-align: center;
+    
   }
 }
