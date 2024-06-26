@@ -126,6 +126,10 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.size {
+  width: 450px;
+  height: 400px;
+}
 .challenge {
   width: 450px;
   height: 400px;
