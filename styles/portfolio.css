@@ -2,7 +2,7 @@
   --branding-color: #927fbf;
   --navbar-color: #927fbf;
   --heading-font-family: "Playfair", sans-serif;
-  
+}
 
 body {
   font-family: "Playfair", sans-serif;
@@ -38,12 +38,12 @@ h4 {
   font-size: 30px;
 }
 
-
 p {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
 }
+
 .intro {
   font-size: 40px;
 }
@@ -64,7 +64,6 @@ p {
 
 .navbar-branding {
   background-color: var(--branding-color);
-  
 }
 
 .navbar-brand {
@@ -92,7 +91,6 @@ p {
 
 .content-container {
   padding: 80px 20px;
-  
 }
 
 .content h2 {
@@ -114,7 +112,6 @@ p {
 
 .content {
   margin: 30px;
-  
 }
 
 .img-fluid {
@@ -127,10 +124,12 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 .size {
   width: 450px;
   height: 400px;
 }
+
 .challenge {
   width: 450px;
   height: 400px;
@@ -144,7 +143,6 @@ p {
 .col-6 {
   padding: 5px;
 }
-
 
 .hero {
   background: #e4e0f6;
@@ -186,19 +184,21 @@ p {
   line-height: 27px;
   padding: 10px 20px;
 }
+
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Damit der Container die volle Breite einnimmt */
+  width: 100%;
 }
 
 .project-description {
   padding: 120px 60px;
   margin-bottom: 15px;
 }
+
 .row.align-items-center {
-  margin-bottom: 10px; /* Reduzieren Sie den Abstand nach Bedarf */
+  margin-bottom: 10px;
 }
 
 .link,
@@ -206,7 +206,9 @@ p {
   color: black;
   text-decoration: none;
 }
-.fähigkeiten, .tools {
+
+.fähigkeiten,
+.tools {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,28 +234,30 @@ footer .contact-box {
 
 footer .contact-box p {
   margin: 0;
-  
 }
+
 .contact-box-container {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 5rem; /* Adjust the bottom margin as needed */
+  margin-bottom: 5rem;
 }
+
 .contact-box p {
-  line-height: 1.2; /* Adjust line-height for the paragraph */
+  line-height: 1.2;
 }
 
 .contact-box {
   width: 80%;
-  background-color: #f8f9fa; /* Optional: background color for visibility */
-  padding: 20px; /* Optional: padding for inner spacing */
-  border: 1px solid #ddd; /* Optional: border for visibility */
-  border-radius: 5px; /* Optional: border radius for rounded corners */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 footer .email-link {
   text-decoration: none;
   color: black;
@@ -288,6 +292,64 @@ footer .social-links a:hover {
   transition: all 150ms ease-in-out;
 }
 
+/* Neue Grid-Layout-Styles für Projekte */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-item h2 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.project-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 1rem 1rem;
+  text-align: center;
+}
+
+.project-item a {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: var(--branding-color);
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.project-item a:hover {
+  background-color: #7b68a3;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -312,28 +374,28 @@ footer .social-links a:hover {
   }
 
   .content-container {
-  padding: 40px 20px;
-  
-}
+    padding: 40px 20px;
+  }
 
   .project-description {
     padding: 0;
     text-align: center;
-    
   }
-    .contact-box {
-    flex-direction: column; /* Stack the items vertically */
-    align-items: center; /* Center align items */
-    text-align: center; /* Center text inside the container */
-  }
-  .contact-box div:last-child {
-    align-self: center; /* Center the button */
-    width: 100%;
-    text-align: center; /* Center the button text */
-    margin-top: 20px; /* Add margin-top to push the button further down */
-  }
-}
-   
 
- 
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-box div:last-child {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
