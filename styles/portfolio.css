@@ -332,18 +332,20 @@ footer .social-links a:hover {
   margin: 0 1rem 1rem;
   text-align: center;
 }
-.project-item {
-  display: inline-block;
-  font-size: 0.7rem; /* Reduziert die Schriftgröße */
-  padding: 0.3rem 0.6rem; /* Reduziertes Padding */
-  margin: 0.5rem auto; /* Zentriert den Button und reduziert den vertikalen Abstand */
+.project-item a {
+  display: inline-block; /* Änderung von block zu inline-block */
+  text-align: center;
+  margin: 0.5rem; /* Halbiert von 1rem */
+  padding: 0.25rem 0.5rem; /* Angepasst für bessere Proportionen */
   background-color: var(--branding-color);
   color: black;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 2px; /* Halbiert von 4px */
   transition: background-color 0.3s ease;
-  width: fit-content; /* Lässt den Button sich an den Inhalt anpassen */
-  max-width: 50%; /* Begrenzt die maximale Breite */
+  font-size: 16px; /* Reduziert die Schriftgröße */
+  max-width: 75%; /* Begrenzt die Breite auf 50% */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-item a:hover {
