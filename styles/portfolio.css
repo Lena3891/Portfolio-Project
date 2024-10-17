@@ -296,7 +296,7 @@ footer .social-links a:hover {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 40px;
   padding: 2rem 0;
 }
 
@@ -332,18 +332,18 @@ footer .social-links a:hover {
   margin: 0 1rem 1rem;
   text-align: center;
 }
-
-.project-item a {
-  display: block;
-  text-align: center;
-  margin: 1rem;
-  padding: 0.5rem;
+.project-item {
+  display: inline-block;
+  font-size: 0.7rem; /* Reduziert die Schriftgröße */
+  padding: 0.3rem 0.6rem; /* Reduziertes Padding */
+  margin: 0.5rem auto; /* Zentriert den Button und reduziert den vertikalen Abstand */
   background-color: var(--branding-color);
   color: black;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 2px;
   transition: background-color 0.3s ease;
-  margin-top: auto;
+  width: fit-content; /* Lässt den Button sich an den Inhalt anpassen */
+  max-width: 50%; /* Begrenzt die maximale Breite */
 }
 
 .project-item a:hover {
@@ -397,5 +397,6 @@ footer .social-links a:hover {
 
   .project-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
   }
 }
